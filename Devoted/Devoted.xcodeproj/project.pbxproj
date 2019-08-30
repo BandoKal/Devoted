@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		057BA59C2319A93A0056C0F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA59B2319A93A0056C0F9 /* AppDelegate.swift */; };
 		057BA59E2319A93A0056C0F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA59D2319A93A0056C0F9 /* SceneDelegate.swift */; };
-		057BA5A02319A93A0056C0F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA59F2319A93A0056C0F9 /* ContentView.swift */; };
 		057BA5A22319A93E0056C0F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057BA5A12319A93E0056C0F9 /* Assets.xcassets */; };
 		057BA5A52319A93E0056C0F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057BA5A42319A93E0056C0F9 /* Preview Assets.xcassets */; };
 		057BA5A82319A93E0056C0F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 057BA5A62319A93E0056C0F9 /* LaunchScreen.storyboard */; };
 		057BA5B32319A93F0056C0F9 /* DevotedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5B22319A93F0056C0F9 /* DevotedTests.swift */; };
+		057BA5CB2319A9700056C0F9 /* DevotedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 057BA5C22319A96F0056C0F9 /* DevotedKit.framework */; };
+		057BA5D22319A9700056C0F9 /* DevotedKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5D12319A9700056C0F9 /* DevotedKitTests.swift */; };
+		057BA5D42319A9700056C0F9 /* DevotedKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 057BA5C42319A96F0056C0F9 /* DevotedKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057BA5D72319A9700056C0F9 /* DevotedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 057BA5C22319A96F0056C0F9 /* DevotedKit.framework */; };
+		057BA5D82319A9700056C0F9 /* DevotedKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 057BA5C22319A96F0056C0F9 /* DevotedKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		057BA5E02319A98B0056C0F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA59F2319A93A0056C0F9 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +29,42 @@
 			remoteGlobalIDString = 057BA5972319A93A0056C0F9;
 			remoteInfo = Devoted;
 		};
+		057BA5CC2319A9700056C0F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 057BA5902319A93A0056C0F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 057BA5C12319A96F0056C0F9;
+			remoteInfo = DevotedKit;
+		};
+		057BA5CE2319A9700056C0F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 057BA5902319A93A0056C0F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 057BA5972319A93A0056C0F9;
+			remoteInfo = Devoted;
+		};
+		057BA5D52319A9700056C0F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 057BA5902319A93A0056C0F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 057BA5C12319A96F0056C0F9;
+			remoteInfo = DevotedKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		057BA5DC2319A9700056C0F9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				057BA5D82319A9700056C0F9 /* DevotedKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		057BA5982319A93A0056C0F9 /* Devoted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devoted.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +78,12 @@
 		057BA5AE2319A93F0056C0F9 /* DevotedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevotedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		057BA5B22319A93F0056C0F9 /* DevotedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotedTests.swift; sourceTree = "<group>"; };
 		057BA5B42319A93F0056C0F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		057BA5C22319A96F0056C0F9 /* DevotedKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DevotedKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		057BA5C42319A96F0056C0F9 /* DevotedKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DevotedKit.h; sourceTree = "<group>"; };
+		057BA5C52319A96F0056C0F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		057BA5CA2319A9700056C0F9 /* DevotedKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevotedKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		057BA5D12319A9700056C0F9 /* DevotedKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotedKitTests.swift; sourceTree = "<group>"; };
+		057BA5D32319A9700056C0F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				057BA5D72319A9700056C0F9 /* DevotedKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +99,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		057BA5BF2319A96F0056C0F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		057BA5C72319A9700056C0F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057BA5CB2319A9700056C0F9 /* DevotedKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +125,8 @@
 			children = (
 				057BA59A2319A93A0056C0F9 /* Devoted */,
 				057BA5B12319A93F0056C0F9 /* DevotedTests */,
+				057BA5C32319A96F0056C0F9 /* DevotedKit */,
+				057BA5D02319A9700056C0F9 /* DevotedKitTests */,
 				057BA5992319A93A0056C0F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +136,8 @@
 			children = (
 				057BA5982319A93A0056C0F9 /* Devoted.app */,
 				057BA5AE2319A93F0056C0F9 /* DevotedTests.xctest */,
+				057BA5C22319A96F0056C0F9 /* DevotedKit.framework */,
+				057BA5CA2319A9700056C0F9 /* DevotedKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,7 +147,6 @@
 			children = (
 				057BA59B2319A93A0056C0F9 /* AppDelegate.swift */,
 				057BA59D2319A93A0056C0F9 /* SceneDelegate.swift */,
-				057BA59F2319A93A0056C0F9 /* ContentView.swift */,
 				057BA5A12319A93E0056C0F9 /* Assets.xcassets */,
 				057BA5A62319A93E0056C0F9 /* LaunchScreen.storyboard */,
 				057BA5A92319A93E0056C0F9 /* Info.plist */,
@@ -107,7 +172,37 @@
 			path = DevotedTests;
 			sourceTree = "<group>";
 		};
+		057BA5C32319A96F0056C0F9 /* DevotedKit */ = {
+			isa = PBXGroup;
+			children = (
+				057BA59F2319A93A0056C0F9 /* ContentView.swift */,
+				057BA5C42319A96F0056C0F9 /* DevotedKit.h */,
+				057BA5C52319A96F0056C0F9 /* Info.plist */,
+			);
+			path = DevotedKit;
+			sourceTree = "<group>";
+		};
+		057BA5D02319A9700056C0F9 /* DevotedKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				057BA5D12319A9700056C0F9 /* DevotedKitTests.swift */,
+				057BA5D32319A9700056C0F9 /* Info.plist */,
+			);
+			path = DevotedKitTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		057BA5BD2319A96F0056C0F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057BA5D42319A9700056C0F9 /* DevotedKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		057BA5972319A93A0056C0F9 /* Devoted */ = {
@@ -117,10 +212,12 @@
 				057BA5942319A93A0056C0F9 /* Sources */,
 				057BA5952319A93A0056C0F9 /* Frameworks */,
 				057BA5962319A93A0056C0F9 /* Resources */,
+				057BA5DC2319A9700056C0F9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				057BA5D62319A9700056C0F9 /* PBXTargetDependency */,
 			);
 			name = Devoted;
 			productName = Devoted;
@@ -145,6 +242,43 @@
 			productReference = 057BA5AE2319A93F0056C0F9 /* DevotedTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		057BA5C12319A96F0056C0F9 /* DevotedKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 057BA5D92319A9700056C0F9 /* Build configuration list for PBXNativeTarget "DevotedKit" */;
+			buildPhases = (
+				057BA5BD2319A96F0056C0F9 /* Headers */,
+				057BA5BE2319A96F0056C0F9 /* Sources */,
+				057BA5BF2319A96F0056C0F9 /* Frameworks */,
+				057BA5C02319A96F0056C0F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DevotedKit;
+			productName = DevotedKit;
+			productReference = 057BA5C22319A96F0056C0F9 /* DevotedKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		057BA5C92319A9700056C0F9 /* DevotedKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 057BA5DD2319A9700056C0F9 /* Build configuration list for PBXNativeTarget "DevotedKitTests" */;
+			buildPhases = (
+				057BA5C62319A9700056C0F9 /* Sources */,
+				057BA5C72319A9700056C0F9 /* Frameworks */,
+				057BA5C82319A9700056C0F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				057BA5CD2319A9700056C0F9 /* PBXTargetDependency */,
+				057BA5CF2319A9700056C0F9 /* PBXTargetDependency */,
+			);
+			name = DevotedKitTests;
+			productName = DevotedKitTests;
+			productReference = 057BA5CA2319A9700056C0F9 /* DevotedKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -159,6 +293,13 @@
 						CreatedOnToolsVersion = 11.0;
 					};
 					057BA5AD2319A93F0056C0F9 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 057BA5972319A93A0056C0F9;
+					};
+					057BA5C12319A96F0056C0F9 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					057BA5C92319A9700056C0F9 = {
 						CreatedOnToolsVersion = 11.0;
 						TestTargetID = 057BA5972319A93A0056C0F9;
 					};
@@ -179,6 +320,8 @@
 			targets = (
 				057BA5972319A93A0056C0F9 /* Devoted */,
 				057BA5AD2319A93F0056C0F9 /* DevotedTests */,
+				057BA5C12319A96F0056C0F9 /* DevotedKit */,
+				057BA5C92319A9700056C0F9 /* DevotedKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -201,6 +344,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		057BA5C02319A96F0056C0F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		057BA5C82319A9700056C0F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -210,7 +367,6 @@
 			files = (
 				057BA59C2319A93A0056C0F9 /* AppDelegate.swift in Sources */,
 				057BA59E2319A93A0056C0F9 /* SceneDelegate.swift in Sources */,
-				057BA5A02319A93A0056C0F9 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +378,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		057BA5BE2319A96F0056C0F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057BA5E02319A98B0056C0F9 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		057BA5C62319A9700056C0F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057BA5D22319A9700056C0F9 /* DevotedKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -229,6 +401,21 @@
 			isa = PBXTargetDependency;
 			target = 057BA5972319A93A0056C0F9 /* Devoted */;
 			targetProxy = 057BA5AF2319A93F0056C0F9 /* PBXContainerItemProxy */;
+		};
+		057BA5CD2319A9700056C0F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 057BA5C12319A96F0056C0F9 /* DevotedKit */;
+			targetProxy = 057BA5CC2319A9700056C0F9 /* PBXContainerItemProxy */;
+		};
+		057BA5CF2319A9700056C0F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 057BA5972319A93A0056C0F9 /* Devoted */;
+			targetProxy = 057BA5CE2319A9700056C0F9 /* PBXContainerItemProxy */;
+		};
+		057BA5D62319A9700056C0F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 057BA5C12319A96F0056C0F9 /* DevotedKit */;
+			targetProxy = 057BA5D52319A9700056C0F9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -361,6 +548,7 @@
 		057BA5B82319A93F0056C0F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "Devoted/Preview\\ Content";
@@ -381,6 +569,7 @@
 		057BA5B92319A93F0056C0F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "Devoted/Preview\\ Content";
@@ -440,6 +629,100 @@
 			};
 			name = Release;
 		};
+		057BA5DA2319A9700056C0F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H47F673SJ7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DevotedKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bandokal.DevotedKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		057BA5DB2319A9700056C0F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H47F673SJ7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DevotedKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bandokal.DevotedKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		057BA5DE2319A9700056C0F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H47F673SJ7;
+				INFOPLIST_FILE = DevotedKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bandokal.DevotedKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Devoted.app/Devoted";
+			};
+			name = Debug;
+		};
+		057BA5DF2319A9700056C0F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H47F673SJ7;
+				INFOPLIST_FILE = DevotedKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bandokal.DevotedKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Devoted.app/Devoted";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -466,6 +749,24 @@
 			buildConfigurations = (
 				057BA5BB2319A93F0056C0F9 /* Debug */,
 				057BA5BC2319A93F0056C0F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		057BA5D92319A9700056C0F9 /* Build configuration list for PBXNativeTarget "DevotedKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				057BA5DA2319A9700056C0F9 /* Debug */,
+				057BA5DB2319A9700056C0F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		057BA5DD2319A9700056C0F9 /* Build configuration list for PBXNativeTarget "DevotedKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				057BA5DE2319A9700056C0F9 /* Debug */,
+				057BA5DF2319A9700056C0F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
