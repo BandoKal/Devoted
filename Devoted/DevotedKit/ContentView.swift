@@ -10,8 +10,8 @@ import SwiftUI
 
 public struct ContentView: View {
     
-    public init() {
-    }
+    // struct implicit init is set to internal scope
+    public init() {}
     
     public var body: some View {
         Text("Hello World")
