@@ -19,6 +19,8 @@
 		057BA5D72319A9700056C0F9 /* DevotedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 057BA5C22319A96F0056C0F9 /* DevotedKit.framework */; };
 		057BA5D82319A9700056C0F9 /* DevotedKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 057BA5C22319A96F0056C0F9 /* DevotedKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		057BA5E02319A98B0056C0F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA59F2319A93A0056C0F9 /* ContentView.swift */; };
+		057BA5E22319AB360056C0F9 /* DataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5E12319AB360056C0F9 /* DataAccess.swift */; };
+		057BA5E42319AB8C0056C0F9 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 057BA5E32319AB8C0056C0F9 /* config.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,8 @@
 		057BA5CA2319A9700056C0F9 /* DevotedKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevotedKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		057BA5D12319A9700056C0F9 /* DevotedKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotedKitTests.swift; sourceTree = "<group>"; };
 		057BA5D32319A9700056C0F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		057BA5E12319AB360056C0F9 /* DataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccess.swift; sourceTree = "<group>"; };
+		057BA5E32319AB8C0056C0F9 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +182,8 @@
 				057BA59F2319A93A0056C0F9 /* ContentView.swift */,
 				057BA5C42319A96F0056C0F9 /* DevotedKit.h */,
 				057BA5C52319A96F0056C0F9 /* Info.plist */,
+				057BA5E12319AB360056C0F9 /* DataAccess.swift */,
+				057BA5E32319AB8C0056C0F9 /* config.plist */,
 			);
 			path = DevotedKit;
 			sourceTree = "<group>";
@@ -348,6 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				057BA5E42319AB8C0056C0F9 /* config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				057BA5E02319A98B0056C0F9 /* ContentView.swift in Sources */,
+				057BA5E22319AB360056C0F9 /* DataAccess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
