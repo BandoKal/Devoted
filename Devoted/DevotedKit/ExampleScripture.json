@@ -1,0 +1,52 @@
+[
+  {
+    "2019-08-29": [
+      {
+        "book": "2 Peter",
+        "bookNumber": 61,
+        "chapter": 1,
+        "verses": [
+          "3"
+        ],
+        "text": "According as his divine power hath given to us all things that pertain to life and godliness, through the knowledge of him that hath called us to glory and virtue:",
+        "textOriginal": "Ὡς τὰ πάντα ἡμῖν τῆς θείας δυνάμεως αὐτοῦ τὰ πρὸς ζωὴν καὶ εὐσέβειαν δεδωρημένης διὰ τῆς ἐπιγνώσεως τοῦ καλέσαντος ἡμᾶς ἰδίᾳ δόξῃ καὶ ἀρετῇ.",
+        "version": {
+          "id": "web",
+          "name": "Webster",
+          "language": "en",
+          "details": {
+            "description": "*",
+            "publisher": "FREE BIBLE SOFWARE GROUP",
+            "source": "ftp://unboundftp.biola.edu/pub/webster.zip"
+          }
+        },
+        "biblePart": 1,
+        "reference": "2 Peter 1:3",
+        "readingUrl": "https://devotionalium.com/read/version/web/book/61/chapter/1"
+      },
+      {
+        "book": "Jeremiah",
+        "bookNumber": 24,
+        "chapter": 5,
+        "verses": [
+          "3"
+        ],
+        "text": "O LORD, are not thy eyes upon the truth? thou hast stricken them, but they have not grieved; thou hast consumed them, but they have refused to receive correction: they have made their faces harder than a rock; they have refused to return.",
+        "textOriginal": "יְהֹוָה עֵינֶיךָ הֲלוֹא לֶאֱמוּנָה הִכִּיתָה אֹתָם וְלֹא־חָלוּ כִּלִּיתָם מֵאֲנוּ קַחַת מוּסָר חִזְּקוּ פְנֵיהֶם מִסֶּלַע מֵאֲנוּ לָשׁוּב ׃",
+        "version": {
+          "id": "web",
+          "name": "Webster",
+          "language": "en",
+          "details": {
+            "description": "*",
+            "publisher": "FREE BIBLE SOFWARE GROUP",
+            "source": "ftp://unboundftp.biola.edu/pub/webster.zip"
+          }
+        },
+        "biblePart": 0,
+        "reference": "Jeremiah 5:3",
+        "readingUrl": "https://devotionalium.com/read/version/web/book/24/chapter/5"
+      }
+    ]
+  }
+]

@@ -21,6 +21,8 @@
 		057BA5E02319A98B0056C0F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA59F2319A93A0056C0F9 /* ContentView.swift */; };
 		057BA5E22319AB360056C0F9 /* DataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5E12319AB360056C0F9 /* DataAccess.swift */; };
 		057BA5E42319AB8C0056C0F9 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 057BA5E32319AB8C0056C0F9 /* config.plist */; };
+		057BA5E62319AC830056C0F9 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5E52319AC830056C0F9 /* Errors.swift */; };
+		057BA5E82319ACBA0056C0F9 /* Scripture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5E72319ACBA0056C0F9 /* Scripture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,9 @@
 		057BA5D32319A9700056C0F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		057BA5E12319AB360056C0F9 /* DataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccess.swift; sourceTree = "<group>"; };
 		057BA5E32319AB8C0056C0F9 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		057BA5E52319AC830056C0F9 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		057BA5E72319ACBA0056C0F9 /* Scripture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scripture.swift; sourceTree = "<group>"; };
+		057BA5EA2319AD220056C0F9 /* ExampleScripture.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ExampleScripture.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +184,7 @@
 		057BA5C32319A96F0056C0F9 /* DevotedKit */ = {
 			isa = PBXGroup;
 			children = (
+				057BA5E92319ACD10056C0F9 /* Models */,
 				057BA59F2319A93A0056C0F9 /* ContentView.swift */,
 				057BA5C42319A96F0056C0F9 /* DevotedKit.h */,
 				057BA5C52319A96F0056C0F9 /* Info.plist */,
@@ -195,6 +201,16 @@
 				057BA5D32319A9700056C0F9 /* Info.plist */,
 			);
 			path = DevotedKitTests;
+			sourceTree = "<group>";
+		};
+		057BA5E92319ACD10056C0F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				057BA5E72319ACBA0056C0F9 /* Scripture.swift */,
+				057BA5E52319AC830056C0F9 /* Errors.swift */,
+				057BA5EA2319AD220056C0F9 /* ExampleScripture.json */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,7 +406,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				057BA5E02319A98B0056C0F9 /* ContentView.swift in Sources */,
+				057BA5E62319AC830056C0F9 /* Errors.swift in Sources */,
 				057BA5E22319AB360056C0F9 /* DataAccess.swift in Sources */,
+				057BA5E82319ACBA0056C0F9 /* Scripture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

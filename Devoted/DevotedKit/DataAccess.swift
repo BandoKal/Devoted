@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+
+
+
+public func fetchVerses(from fromDate: Date,
+                        to toDate: Date,
+                        completion: @escaping (Result<[String: [Scripture]], NetworkError>) -> Void) {}
