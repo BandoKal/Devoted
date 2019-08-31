@@ -21,14 +21,14 @@ struct ViewModel {
         to: Date()) else { return }
         
         let formatter = currentEnvironment.dateFormatter
-
+        
         let fromDate = formatter.string(from: fiveDaysAgo)
         let toDate = formatter.string(from: Date())
-        let url = buildURL(for: .bibleVerse, with: [URLQueryItem(name: Constant.fromDateAPIKey, value: fromDate),
-                                                    URLQueryItem(name: Constant.toDateAPIKey, value: toDate)])
+        let url = buildURL(for: currentEnvironment.apiEndpoint, with: [URLQueryItem(name: Constant.fromDateAPIKey, value: fromDate),
+                                                                       URLQueryItem(name: Constant.toDateAPIKey, value: toDate)])
 
 
-        fetchVerses(from: url) { result in
+        currentEnvironment.dataFetcher.fetchVerses(from: url) { result in
             switch result {
             case .success(let bibleVerses):
                 //map to a model property

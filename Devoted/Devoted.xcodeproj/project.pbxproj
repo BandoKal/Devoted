@@ -27,6 +27,8 @@
 		057BA5EF2319AEFB0056C0F9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5EE2319AEFB0056C0F9 /* Constant.swift */; };
 		057BA5F12319AF220056C0F9 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5F02319AF220056C0F9 /* Config.swift */; };
 		057BA5F32319AF7E0056C0F9 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5F22319AF7E0056C0F9 /* AppEnvironment.swift */; };
+		057BA5F52319B1C30056C0F9 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5F42319B1C30056C0F9 /* Endpoints.swift */; };
+		057BA5F72319B9F40056C0F9 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5F62319B9F40056C0F9 /* Mock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,8 @@
 		057BA5EE2319AEFB0056C0F9 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		057BA5F02319AF220056C0F9 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		057BA5F22319AF7E0056C0F9 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		057BA5F42319B1C30056C0F9 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		057BA5F62319B9F40056C0F9 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,7 +204,9 @@
 				057BA5EC2319AE280056C0F9 /* ViewModel.swift */,
 				057BA5F02319AF220056C0F9 /* Config.swift */,
 				057BA5E32319AB8C0056C0F9 /* config.plist */,
+				057BA5F42319B1C30056C0F9 /* Endpoints.swift */,
 				057BA5F22319AF7E0056C0F9 /* AppEnvironment.swift */,
+				057BA5F62319B9F40056C0F9 /* Mock.swift */,
 			);
 			path = DevotedKit;
 			sourceTree = "<group>";
@@ -418,12 +424,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				057BA5ED2319AE280056C0F9 /* ViewModel.swift in Sources */,
+				057BA5F72319B9F40056C0F9 /* Mock.swift in Sources */,
 				057BA5E02319A98B0056C0F9 /* ContentView.swift in Sources */,
 				057BA5E62319AC830056C0F9 /* Errors.swift in Sources */,
 				057BA5F12319AF220056C0F9 /* Config.swift in Sources */,
 				057BA5E22319AB360056C0F9 /* DataAccess.swift in Sources */,
 				057BA5F32319AF7E0056C0F9 /* AppEnvironment.swift in Sources */,
 				057BA5E82319ACBA0056C0F9 /* Scripture.swift in Sources */,
+				057BA5F52319B1C30056C0F9 /* Endpoints.swift in Sources */,
 				057BA5EF2319AEFB0056C0F9 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

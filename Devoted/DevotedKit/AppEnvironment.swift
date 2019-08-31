@@ -15,8 +15,10 @@ func makeDateFormatter(_ format: String) -> (DateFormatter) -> DateFormatter {
     }
 }
 
-class AppEnvironment {
+struct AppEnvironment {
     let dateFormatter = makeDateFormatter(Constant.dateFormat)(DateFormatter())
+    var apiEndpoint = Endpoint.bibleVerse
+    var dataFetcher = NetworkFetcher()
 }
 
 let currentEnvironment = AppEnvironment()
