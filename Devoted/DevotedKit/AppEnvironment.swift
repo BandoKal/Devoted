@@ -16,9 +16,11 @@ func makeDateFormatter(_ format: String) -> (DateFormatter) -> DateFormatter {
 }
 
 struct AppEnvironment {
-    let dateFormatter = makeDateFormatter(Constant.dateFormat)(DateFormatter())
+    var delegatedURLSession = URLSession.shared
     var apiEndpoint = Endpoint.bibleVerse
-    var dataFetcher = NetworkFetcher()
+    let dateFormatter = { (dateFormat: String) in
+        return makeDateFormatter(dateFormat)(DateFormatter())
+    }
 }
 
-let currentEnvironment = AppEnvironment()
+var currentEnvironment = AppEnvironment()

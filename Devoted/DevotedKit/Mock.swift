@@ -9,13 +9,38 @@
 import Foundation
 
 extension AppEnvironment {
-    static let mock = AppEnvironment(apiEndpoint: .local,
-                                     dataFetcher: .mock)
+    static let mock = AppEnvironment(delegatedURLSession: .mock,
+                                     apiEndpoint: .local)
 }
 
 
-class MockNetworkFetcher: NetworkFetcher {
-    override func fetchVerses(from url: URL,
+class MockURLSession: URLSession {
+    
+    class MockURLSessionDataTask: URLSessionDataTask {
+        var url: URL
+        
+        var completion: (Data?, URLResponse?, Error?) -> Void
+        
+        override func resume() {
+            do {
+                let data = try Data(contentsOf: url, options: .mappedIfSafe)
+                completion(data,response,error)
+            } catch {
+                completion(nil,response,error)
+            }
+        }
+        
+        init(_ url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> Void) {
+            self.url = url
+            self.completion = completion
+        }
+    }
+    
+    override func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
+        return MockURLSessionDataTask(url, completion: completionHandler)
+    }
+    
+    func fetchVerses(from url: URL,
                               completion: @escaping (Result<[String : [Scripture]], NetworkError>) -> Void) {
         do {
             let data = try Data(contentsOf: url, options: .mappedIfSafe)
@@ -31,6 +56,6 @@ class MockNetworkFetcher: NetworkFetcher {
     
 }
 
-extension NetworkFetcher {
-    static let mock = MockNetworkFetcher()
+extension URLSession {
+    static let mock = MockURLSession()
 }

@@ -11,34 +11,61 @@ import SwiftUI
 import Combine
 
 
-struct ViewModel {
+final class ViewModel: ObservableObject {
     
-    // Let's just do the last 5 days for now.
-    func fetchLastFiveDays() {
-        guard let fiveDaysAgo = Calendar.current.date(
-        byAdding: .day,
-        value: -5,
-        to: Date()) else { return }
+    @Published var oldTestamentReference = ""
+    @Published var oldTestamentDisplayText = ""
+    var oldTestamentText = ""
+    var oldTestamentOrginalText = ""
+    
+    @Published var newTestamentReference = ""
+    @Published var newTestamentDisplayText = ""
+    var newTestamentText = ""
+    var newTestamentOrginalText = ""
+    @Published var backgroundImage = ""
+    @Published var fetchErrorMessage = ""
+    
+    func oldTestamentTextTapped() {
+        oldTestamentDisplayText = (oldTestamentDisplayText == oldTestamentOrginalText) ?
+            oldTestamentText :
+            oldTestamentOrginalText
+    }
+    
+    func newTestamentTextTapped() {
+        newTestamentDisplayText = (newTestamentDisplayText == newTestamentOrginalText) ?
+        newTestamentText :
+        newTestamentOrginalText
+    }
+    
+    func fetchTodaysVerse() {
+        let formatter = currentEnvironment.dateFormatter(Constant.dateFormat)
         
-        let formatter = currentEnvironment.dateFormatter
-        
-        let fromDate = formatter.string(from: fiveDaysAgo)
+        let fromDate = formatter.string(from: Date())
         let toDate = formatter.string(from: Date())
         let url = buildURL(for: currentEnvironment.apiEndpoint, with: [URLQueryItem(name: Constant.fromDateAPIKey, value: fromDate),
                                                                        URLQueryItem(name: Constant.toDateAPIKey, value: toDate)])
-
-
-        currentEnvironment.dataFetcher.fetchVerses(from: url) { result in
-            switch result {
-            case .success(let bibleVerses):
-                //map to a model property
-                print(bibleVerses)
-            case .failure(let error):
-                //map to a model property
-                //Drop breadcrumb "Model updated with error"
-                print(error)
-            }
+        
+        let _ = fetchVerses(from: url)
+            .assertNoFailure()
+            .compactMap{ $0.data }
+            .decode(type: [String: [Scripture]].self, decoder: JSONDecoder())
+            .receive(on: RunLoop.main)
+            .sink(receiveCompletion: { _ in
+            }) {
+                let firstValue = $0.first?.value.first
+                let secondValue = $0.first?.value[1]
+            
+                self.oldTestamentReference = firstValue?.reference ?? ""
+                self.oldTestamentText = firstValue?.text ?? ""
+                self.oldTestamentDisplayText = firstValue?.text ?? ""
+                self.oldTestamentOrginalText = firstValue?.textOriginal ?? ""
+                
+                self.newTestamentReference = secondValue?.reference ?? ""
+                self.newTestamentText = secondValue?.text ?? ""
+                self.newTestamentDisplayText = secondValue?.text ?? ""
+                self.newTestamentOrginalText = secondValue?.textOriginal ?? ""
         }
     }
+    
+    
 }
-

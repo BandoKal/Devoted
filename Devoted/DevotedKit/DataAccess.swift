@@ -25,21 +25,9 @@ func decode<T: Decodable>(_ type: T.Type, from data: Data?) -> T? {
     return try! jsonDecoder.decode(type, from: data)
 }
 
-
-class NetworkFetcher {
-    func fetchVerses(from url: URL,
-                     completion: @escaping (Result<[String : [Scripture]], NetworkError>) -> Void) {
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-            guard let bibleVerses = decode([String: [Scripture]].self, from: data) else {
-                if let error = error {
-                    completion(.failure(.underlyingError(error)))
-                } else {
-                    completion(.failure(.noDataReturned))
-                }
-                return
-            }
-            completion(.success(bibleVerses))
-        }.resume()
-    }
+@discardableResult
+func fetchVerses(from url: URL) -> URLSession.DataTaskPublisher {
+    return currentEnvironment.delegatedURLSession.dataTaskPublisher(for: url)
 }
+
 

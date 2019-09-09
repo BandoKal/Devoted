@@ -18,7 +18,7 @@
 		057BA5D42319A9700056C0F9 /* DevotedKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 057BA5C42319A96F0056C0F9 /* DevotedKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		057BA5D72319A9700056C0F9 /* DevotedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 057BA5C22319A96F0056C0F9 /* DevotedKit.framework */; };
 		057BA5D82319A9700056C0F9 /* DevotedKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 057BA5C22319A96F0056C0F9 /* DevotedKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		057BA5E02319A98B0056C0F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA59F2319A93A0056C0F9 /* ContentView.swift */; };
+		057BA5E02319A98B0056C0F9 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA59F2319A93A0056C0F9 /* Views.swift */; };
 		057BA5E22319AB360056C0F9 /* DataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5E12319AB360056C0F9 /* DataAccess.swift */; };
 		057BA5E42319AB8C0056C0F9 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 057BA5E32319AB8C0056C0F9 /* config.plist */; };
 		057BA5E62319AC830056C0F9 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5E52319AC830056C0F9 /* Errors.swift */; };
@@ -29,6 +29,7 @@
 		057BA5F32319AF7E0056C0F9 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5F22319AF7E0056C0F9 /* AppEnvironment.swift */; };
 		057BA5F52319B1C30056C0F9 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5F42319B1C30056C0F9 /* Endpoints.swift */; };
 		057BA5F72319B9F40056C0F9 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057BA5F62319B9F40056C0F9 /* Mock.swift */; };
+		05DDDB032321D13700EF4236 /* ExampleScripture.json in Resources */ = {isa = PBXBuildFile; fileRef = 057BA5EA2319AD220056C0F9 /* ExampleScripture.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +81,7 @@
 		057BA5982319A93A0056C0F9 /* Devoted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devoted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		057BA59B2319A93A0056C0F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		057BA59D2319A93A0056C0F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		057BA59F2319A93A0056C0F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		057BA59F2319A93A0056C0F9 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		057BA5A12319A93E0056C0F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		057BA5A42319A93E0056C0F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		057BA5A72319A93E0056C0F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -197,7 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				057BA5E92319ACD10056C0F9 /* Models */,
-				057BA59F2319A93A0056C0F9 /* ContentView.swift */,
+				057BA59F2319A93A0056C0F9 /* Views.swift */,
 				057BA5C42319A96F0056C0F9 /* DevotedKit.h */,
 				057BA5C52319A96F0056C0F9 /* Info.plist */,
 				057BA5E12319AB360056C0F9 /* DataAccess.swift */,
@@ -214,6 +215,7 @@
 		057BA5D02319A9700056C0F9 /* DevotedKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				057BA5EA2319AD220056C0F9 /* ExampleScripture.json */,
 				057BA5D12319A9700056C0F9 /* DevotedKitTests.swift */,
 				057BA5D32319A9700056C0F9 /* Info.plist */,
 			);
@@ -225,7 +227,6 @@
 			children = (
 				057BA5E72319ACBA0056C0F9 /* Scripture.swift */,
 				057BA5E52319AC830056C0F9 /* Errors.swift */,
-				057BA5EA2319AD220056C0F9 /* ExampleScripture.json */,
 				057BA5EE2319AEFB0056C0F9 /* Constant.swift */,
 			);
 			name = Models;
@@ -396,6 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05DDDB032321D13700EF4236 /* ExampleScripture.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +427,7 @@
 			files = (
 				057BA5ED2319AE280056C0F9 /* ViewModel.swift in Sources */,
 				057BA5F72319B9F40056C0F9 /* Mock.swift in Sources */,
-				057BA5E02319A98B0056C0F9 /* ContentView.swift in Sources */,
+				057BA5E02319A98B0056C0F9 /* Views.swift in Sources */,
 				057BA5E62319AC830056C0F9 /* Errors.swift in Sources */,
 				057BA5F12319AF220056C0F9 /* Config.swift in Sources */,
 				057BA5E22319AB360056C0F9 /* DataAccess.swift in Sources */,

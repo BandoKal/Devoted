@@ -25,6 +25,7 @@ public struct Scripture: Decodable {
             }
         }
     }
+    
     var book = ""
     var bookNumber = 0
     var chapter = 0
